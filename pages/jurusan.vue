@@ -1,18 +1,30 @@
 <template>
-  <div>
-    <header>
-      <h1 class="text-center">Jurusan Sekolah</h1>
+  <div class="jurusan-container">
+    <header class="page-header">
+      <h1 class="text-center">Daftar Jurusan SMKN 4 Tasikmalaya</h1>
     </header>
 
     <main class="container">
       <section>
-        <h2>Daftar Jurusan</h2>
-        <p>Berikut adalah daftar jurusan yang tersedia di SMKN 4 Tasikmalaya.</p>
+        <h2 class="section-title">Daftar Jurusan</h2>
+        <p class="section-description">Berikut adalah daftar jurusan yang tersedia di SMKN 4 Tasikmalaya.</p>
 
-        <!-- Display Images Only -->
-        <div class="jurusan-images">
-          <div v-for="jurusan in jurusanList" :key="jurusan.id" class="jurusan-item">
-            <img :src="jurusan.image" alt="Foto {{ jurusan.name }}" class="jurusan-photo" />
+        <!-- Display Departments in Boxes -->
+        <div class="jurusan-boxes">
+          <div 
+            v-for="jurusan in jurusanList" 
+            :key="jurusan.id" 
+            class="jurusan-box"
+          >
+            <img 
+              :src="jurusan.image" 
+              :alt="'Foto ' + jurusan.name" 
+              class="jurusan-image"
+            />
+            <div class="jurusan-info">
+              <h3 class="jurusan-title">{{ jurusan.name }}</h3>
+              <p class="jurusan-description">{{ jurusan.description }}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -29,32 +41,32 @@ export default {
         { 
           id: 1, 
           name: "Teknik Komputer dan Jaringan (TKJ)", 
-          slug: "tkj",
-          image: "/assets/img/tkj.jpg",  // Add image for TKJ
+          description: "Jurusan yang mempelajari tentang jaringan komputer dan infrastruktur IT.",
+          image: "/assets/images/tkj.jpg",  // Image path
         },
         { 
           id: 2, 
           name: "Pengembangan Perangkat Lunak dan Gim (PPLG)", 
-          slug: "rpl",
-          image: "/assets/img/rpl.jpg",  // Add image for PPLG
+          description: "Jurusan untuk pengembangan perangkat lunak dan game.",
+          image: "/assets/images/rpl.jpg",  // Image path
         },
         { 
           id: 3, 
           name: "Teknik Bisnis Sepeda Motor (TBSM)", 
-          slug: "tbsm",
-          image: "/assets/img/tbsm.jpeg",  // Add image for TBSM
+          description: "Jurusan yang mempelajari tentang perawatan dan reparasi sepeda motor.",
+          image: "/assets/images/tbsm.jpg",  // Image path
         },
         { 
           id: 4, 
           name: "Teknik Otomasi Industri (TOI)", 
-          slug: "toi",
-          image: "/assets/img/toi.jpg",  // Add image for TOI
+          description: "Jurusan yang mengajarkan teknik otomasi dalam industri.",
+          image: "/assets/images/toi.jpg",  // Image path
         },
         { 
           id: 5, 
           name: "Desain Komunikasi Visual (DKV)", 
-          slug: "dkv",
-          image: "/assets/img/dkv.jpg",  // Add image for DKV
+          description: "Jurusan yang mempelajari desain grafis dan komunikasi visual.",
+          image: "/assets/images/dkv.jpg",  // Image path
         }
       ]
     };
@@ -63,26 +75,95 @@ export default {
 </script>
 
 <style scoped>
-.jurusan-images {
-  margin-top: 30px;
+/* Styling for the container */
+.jurusan-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Page Header Styling */
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: #2f2546;
+  font-weight: bold;
+}
+
+/* Section Title and Description */
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section-description {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Box layout for jurusan items */
+.jurusan-boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
 }
 
-.jurusan-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Styling for each jurusan box */
+.jurusan-box {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-/* Enlarging the image size */
-.jurusan-photo {
-  width: 350px;  /* Increase the width of the image */
-  height: 350px; /* Increase the height of the image */
-  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the box */
-  border-radius: 10px; /* Rounded corners for a smoother look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: shadow effect for better visibility */
+.jurusan-box:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Image styling */
+.jurusan-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Ensures the image covers the entire box without distortion */
+}
+
+/* Styling for the info inside the box */
+.jurusan-info {
+  padding: 15px;
+}
+
+.jurusan-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.jurusan-description {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .jurusan-box {
+    width: 100%; /* Make the boxes full width on smaller screens */
+  }
+
+  .jurusan-image {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
 }
 </style>

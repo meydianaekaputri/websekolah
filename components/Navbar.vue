@@ -43,6 +43,9 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/ekstrakurikuler">EKSTRAKURIKULER</NuxtLink>
           </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/jurusan">GALERI</NuxtLink>
+          </li>
         </ul>
       </div>
     </nav>
