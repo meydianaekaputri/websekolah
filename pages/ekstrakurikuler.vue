@@ -1,96 +1,215 @@
 <template>
-  <div class="container">
-    <h1>Daftar Ekstrakurikuler</h1>
-    <div class="card-container">
-      <div v-for="ekskul in ekstrakurikuler" :key="ekskul.id" class="card">
-        <h3>{{ ekskul.nama }}</h3>
-        <p>{{ ekskul.deskripsi }}</p>
-        <button class="btn-detail">Detail</button>
-      </div>
-    </div>
+  <div class="jurusan-container">
+    <header class="page-header">
+      <h1 class="text-center">Daftar Ekstrakurikuler SMKN 4 Tasikmalaya</h1>
+    </header>
+
+    <main class="container">
+      <section>
+        <div class="row mt-3 m-3 justify-content-center">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/tkj.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center">MPK</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/rpl.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center mt-1">OSIS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/tsmlogo.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center mt-3">PUB</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
+
+  <!-- Display Departments in Boxes -->
+  <!-- <div class="jurusan-boxes">
+          <div
+            v-for="jurusan in jurusanList"
+            :key="jurusan.id"
+            class="jurusan-box"
+          >
+            <img
+              :src="jurusan.image"
+              :alt="'Foto ' + jurusan.name"
+              class="jurusan-image"
+            />
+            <div class="jurusan-info">
+              <h3 class="jurusan-title">{{ jurusan.name }}</h3>
+              <p class="jurusan-description">{{ jurusan.description }}</p>
+            </div>
+          </div>
+        </div> -->
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const ekstrakurikuler = ref([
-  { id: 1, nama: 'PASKIBRA', deskripsi: 'Gerakan kepanduan.' },
-  { id: 3, nama: 'FUTSAL', deskripsi: 'Olahraga sepak bola dalam ruangan.' },
-  { id: 4, nama: 'PKS', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'PMR', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'VOLLY', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'ENGLISH CLUB', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'IT CLUB', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'ROHIS', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'BASKET', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'CINEMATOGRAPHY', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: '', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-  { id: 4, nama: 'Karya Ilmiah Remaja', deskripsi: 'Kelompok penelitian dan inovasi.' },
-])
-</script>
-
 <style scoped>
-.container {
-  max-width: 1200px;
+.container-fluid {
+  margin-top: 115px;
+}
+
+img {
+  width: 200px;
   margin: auto;
+}
+</style>
+<!-- <script>
+export default {
+  data() {
+    return {
+      // Sample data for jurusan (departments)
+      jurusanList: [
+        {
+          id: 1,
+          name: 'Teknik Komputer dan Jaringan (TKJ)',
+          description: 'Jurusan yang mempelajari tentang jaringan komputer dan infrastruktur IT.',
+          image: '/assets/img/tkj.jpeg', // Image path
+        },
+        {
+          id: 2,
+          name: 'Pengembangan Perangkat Lunak dan Gim (PPLG)',
+          description: 'Jurusan untuk pengembangan perangkat lunak dan game.',
+          image: '/assets/images/rpl.jpg', // Image path
+        },
+        {
+          id: 3,
+          name: 'Teknik Bisnis Sepeda Motor (TBSM)',
+          description: 'Jurusan yang mempelajari tentang perawatan dan reparasi sepeda motor.',
+          image: '/assets/images/tbsm.jpg', // Image path
+        },
+        {
+          id: 4,
+          name: 'Teknik Otomasi Industri (TOI)',
+          description: 'Jurusan yang mengajarkan teknik otomasi dalam industri.',
+          image: '/assets/images/toi.jpg', // Image path
+        },
+        {
+          id: 5,
+          name: 'Desain Komunikasi Visual (DKV)',
+          description: 'Jurusan yang mempelajari desain grafis dan komunikasi visual.',
+          image: '/assets/images/dkv.jpg', // Image path
+        },
+      ],
+    };
+  },
+};
+</script> -->
+
+<!-- <style scoped>
+/* Styling for the container */
+.jurusan-container {
+  margin: 0 auto;
   padding: 20px;
+  max-width: 1200px;
+}
+
+/* Page Header Styling */
+.page-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-h1 {
-  margin-bottom: 30px;
-  color: #333;
+.page-header h1 {
+  font-size: 36px;
+  color: #2f2546;
+  font-weight: bold;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+/* Section Title and Description */
+.section-title {
+  font-size: 24px;
+  text-align: center;
   margin-top: 20px;
 }
 
-.card {
-  background: #ffffff;
+.section-description {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Box layout for jurusan items */
+.jurusan-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styling for each jurusan box */
+.jurusan-box {
+  width: 250px;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.jurusan-box:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
-h3 {
-  margin: 0 0 10px;
-  color: #000000;
+/* Image styling */
+.jurusan-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Ensures the image covers the entire box without distortion */
 }
 
-p {
-  color: #555;
-  margin-bottom: 20px;
+/* Styling for the info inside the box */
+.jurusan-info {
+  padding: 15px;
 }
 
-.btn-detail {
-  background: rgba(35, 13, 88, 0.333);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.jurusan-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
 }
 
-.btn-detail:hover {
-  background: #3e107a;
+.jurusan-description {
+  font-size: 14px;
+  color: #777;
 }
-</style>
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .jurusan-box {
+    width: 100%; /* Make the boxes full width on smaller screens */
+  }
+
+  .jurusan-image {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
+}
+</style> -->

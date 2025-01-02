@@ -1,13 +1,17 @@
 <template>
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg custom-navbar"> <!-- Navbar Container -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <!-- Navbar Container -->
       <!-- Logo Section -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img 
-          src="assets/img/logo.png" 
-          alt="logo SMKN 4" 
+      <a
+        class="navbar-brand d-flex align-items-center"
+        href="#"
+      >
+        <img
+          src="assets/img/logo.png"
+          alt="logo SMKN 4"
           class="img-fluid logo-image me-2"
-        >
+        />
         <span class="logo-text">SMKN 4 TASIKMALAYA</span>
       </a>
 
@@ -25,26 +29,49 @@
       </button>
 
       <!-- Navbar Items -->
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+      >
         <ul class="navbar-nav ms-auto">
           <!-- Link to Home -->
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/">HOME</NuxtLink>
+            <NuxtLink
+              class="nav-link"
+              to="/"
+              >HOME</NuxtLink
+            >
           </li>
           <!-- Link to Profil -->
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/profil">PROFIL</NuxtLink>
+            <NuxtLink
+              class="nav-link"
+              to="/profil"
+              >PROFIL</NuxtLink
+            >
           </li>
           <!-- Link to Jurusan -->
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/jurusan">JURUSAN</NuxtLink>
+            <NuxtLink
+              class="nav-link"
+              to="/jurusan"
+              >JURUSAN</NuxtLink
+            >
           </li>
           <!-- Link to Ekstrakurikuler -->
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/ekstrakurikuler">EKSTRAKURIKULER</NuxtLink>
+            <NuxtLink
+              class="nav-link"
+              to="/ekstrakurikuler"
+              >EKSTRAKURIKULER</NuxtLink
+            >
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/jurusan">GALERI</NuxtLink>
+            <NuxtLink
+              class="nav-link"
+              to="/galeri"
+              >GALERI</NuxtLink
+            >
           </li>
         </ul>
       </div>

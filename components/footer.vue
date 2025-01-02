@@ -1,14 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer-container">
-      <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-      <nav>
-        <ul class="footer-nav">
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+      <p>&copy; Copyright SMKN4 TASIKMALAYA.All rights reserved.</p>
     </div>
   </footer>
 </template>
@@ -22,7 +15,7 @@ export default {
 <style scoped>
 .footer {
   background-color: #2c3e50; /* Warna latar belakang */
-  color: white;              /* Warna teks */
+  color: white; /* Warna teks */
   padding: 20px;
   text-align: center;
   margin-top: 40px;

@@ -3,9 +3,13 @@
     <!-- Section for SMKN 4 Image -->
     <section class="image-section">
       <div class="image-container">
-        <img src="assets/img/guru2.jpg" alt="SMKN 4" class="large-photo" />
+        <img
+          src="assets/img/guru2.jpg"
+          alt="SMKN 4"
+          class="large-photo"
+        />
         <!-- Text inside the image -->
-        <div class="image-text">SMKN 4 Tasikmalaya</div>
+        <div class="image-text">SELAMAT DATANG DI SMK PUSAT KEUNGGULAN SMKN 4 TASIKMALAYA</div>
       </div>
     </section>
 
@@ -14,15 +18,21 @@
       <div class="greeting-container">
         <!-- Headmaster's Photo -->
         <div class="photo-container">
-          <img src="assets/img/kepalaskl.jpg" alt="Kepala Sekolah" class="headmaster-photo" />
+          <img
+            src="assets/img/kepalaskl.jpg"
+            alt="Kepala Sekolah"
+            class="headmaster-photo"
+          />
         </div>
 
         <!-- Headmaster's Greeting Text -->
         <div class="greeting-card">
           <h2>Sambutan Kepala Sekolah</h2>
           <p>
-            Assalamualaikum Warahmatullahi Wabarakatuh. 
-            Selamat datang di SMKN 4 Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah SWT, semoga kita semua ada dalam lindungan-Nya. Dan atas perkenan-Nya pula kami dapat menghadirkan website SMK Negeri 4 Tasikmalaya ini. Kami berharap dengan adanya website di SMK Negeri 4 Tasikmalaya ini para pengunjung dapat mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi antara sekolah dengan masyarakat demi kemajuan kita bersama. Tiada gading yang tak retak, website kami ini masih dalam proses pengembangan, masih banyak kekurangan yang harus kami perbaiki. Kritik dan sarannya yang membangun sangat kami harapkan untuk pengembangan ke depan.
+            Assalamualaikum Warahmatullahi Wabarakatuh. Selamat datang di SMKN 4 Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah SWT, semoga kita semua ada dalam lindungan-Nya. Dan atas perkenan-Nya pula kami dapat
+            menghadirkan website SMK Negeri 4 Tasikmalaya ini. Kami berharap dengan adanya website di SMK Negeri 4 Tasikmalaya ini para pengunjung dapat mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi
+            antara sekolah dengan masyarakat demi kemajuan kita bersama. Tiada gading yang tak retak, website kami ini masih dalam proses pengembangan, masih banyak kekurangan yang harus kami perbaiki. Kritik dan sarannya yang membangun
+            sangat kami harapkan untuk pengembangan ke depan.
           </p>
         </div>
       </div>
@@ -39,9 +49,14 @@
           </div>
           <div class="news-content">
             <p>
-              Pendaftaran siswa baru untuk tahun ajaran 2024/2025 sudah dibuka. Untuk informasi lebih lanjut, silakan kunjungi halaman pendaftaran di website kami atau hubungi pihak sekolah. Jangan lewatkan kesempatan untuk bergabung dengan SMKN 4 Tasikmalaya!
+              Pendaftaran siswa baru untuk tahun ajaran 2024/2025 sudah dibuka. Untuk informasi lebih lanjut, silakan kunjungi halaman pendaftaran di website kami atau hubungi pihak sekolah. Jangan lewatkan kesempatan untuk bergabung dengan
+              SMKN 4 Tasikmalaya!
             </p>
-            <NuxtLink to="/berita" class="read-more">Baca Selengkapnya</NuxtLink>
+            <NuxtLink
+              to="/berita"
+              class="read-more"
+              >Baca Selengkapnya</NuxtLink
+            >
           </div>
         </div>
         <!-- You can add more news cards here -->
@@ -138,7 +153,7 @@ export default {
 .greeting-card h2 {
   margin-top: 0;
   font-size: 1.8rem;
-  color: #007BFF;
+  color: #007bff;
 }
 
 .greeting-card p {
@@ -198,7 +213,7 @@ export default {
 
 .read-more {
   font-size: 1rem;
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 

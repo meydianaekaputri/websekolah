@@ -8,17 +8,84 @@
       <section>
         <h2 class="section-title">Daftar Jurusan</h2>
         <p class="section-description">Berikut adalah daftar jurusan yang tersedia di SMKN 4 Tasikmalaya.</p>
+        <div class="row mt-3 m-3 justify-content-center">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/tkj.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center">TKJ</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/rpl.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center mt-1">PPLG</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/tsmlogo.jpeg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center mt-3">TBSM</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 m-3 justify-content-center">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/dkv.jpg"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center">DKV</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="~/assets/img/toi.png"
+                alt="logo"
+                class="mt-3"
+              />
+              <div class="card-body">
+                <h5 class="text-center mt-1">TOI</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-        <!-- Display Departments in Boxes -->
-        <div class="jurusan-boxes">
-          <div 
-            v-for="jurusan in jurusanList" 
-            :key="jurusan.id" 
+  <!-- Display Departments in Boxes -->
+  <!-- <div class="jurusan-boxes">
+          <div
+            v-for="jurusan in jurusanList"
+            :key="jurusan.id"
             class="jurusan-box"
           >
-            <img 
-              :src="jurusan.image" 
-              :alt="'Foto ' + jurusan.name" 
+            <img
+              :src="jurusan.image"
+              :alt="'Foto ' + jurusan.name"
               class="jurusan-image"
             />
             <div class="jurusan-info">
@@ -26,55 +93,62 @@
               <p class="jurusan-description">{{ jurusan.description }}</p>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-  </div>
+        </div> -->
 </template>
 
-<script>
+<style scoped>
+.container-fluid {
+  margin-top: 115px;
+}
+
+img {
+  width: 200px;
+  margin: auto;
+}
+</style>
+<!-- <script>
 export default {
   data() {
     return {
       // Sample data for jurusan (departments)
       jurusanList: [
-        { 
-          id: 1, 
-          name: "Teknik Komputer dan Jaringan (TKJ)", 
-          description: "Jurusan yang mempelajari tentang jaringan komputer dan infrastruktur IT.",
-          image: "/assets/images/tkj.jpg",  // Image path
+        {
+          id: 1,
+          name: 'Teknik Komputer dan Jaringan (TKJ)',
+          description: 'Jurusan yang mempelajari tentang jaringan komputer dan infrastruktur IT.',
+          image: '/assets/img/tkj.jpeg', // Image path
         },
-        { 
-          id: 2, 
-          name: "Pengembangan Perangkat Lunak dan Gim (PPLG)", 
-          description: "Jurusan untuk pengembangan perangkat lunak dan game.",
-          image: "/assets/images/rpl.jpg",  // Image path
+        {
+          id: 2,
+          name: 'Pengembangan Perangkat Lunak dan Gim (PPLG)',
+          description: 'Jurusan untuk pengembangan perangkat lunak dan game.',
+          image: '/assets/images/rpl.jpg', // Image path
         },
-        { 
-          id: 3, 
-          name: "Teknik Bisnis Sepeda Motor (TBSM)", 
-          description: "Jurusan yang mempelajari tentang perawatan dan reparasi sepeda motor.",
-          image: "/assets/images/tbsm.jpg",  // Image path
+        {
+          id: 3,
+          name: 'Teknik Bisnis Sepeda Motor (TBSM)',
+          description: 'Jurusan yang mempelajari tentang perawatan dan reparasi sepeda motor.',
+          image: '/assets/images/tbsm.jpg', // Image path
         },
-        { 
-          id: 4, 
-          name: "Teknik Otomasi Industri (TOI)", 
-          description: "Jurusan yang mengajarkan teknik otomasi dalam industri.",
-          image: "/assets/images/toi.jpg",  // Image path
+        {
+          id: 4,
+          name: 'Teknik Otomasi Industri (TOI)',
+          description: 'Jurusan yang mengajarkan teknik otomasi dalam industri.',
+          image: '/assets/images/toi.jpg', // Image path
         },
-        { 
-          id: 5, 
-          name: "Desain Komunikasi Visual (DKV)", 
-          description: "Jurusan yang mempelajari desain grafis dan komunikasi visual.",
-          image: "/assets/images/dkv.jpg",  // Image path
-        }
-      ]
+        {
+          id: 5,
+          name: 'Desain Komunikasi Visual (DKV)',
+          description: 'Jurusan yang mempelajari desain grafis dan komunikasi visual.',
+          image: '/assets/images/dkv.jpg', // Image path
+        },
+      ],
     };
-  }
+  },
 };
-</script>
+</script> -->
 
-<style scoped>
+<!-- <style scoped>
 /* Styling for the container */
 .jurusan-container {
   margin: 0 auto;
@@ -166,4 +240,4 @@ export default {
     height: 150px; /* Reduce image height for smaller screens */
   }
 }
-</style>
+</style> -->
