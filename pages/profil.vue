@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="container">
-      <h2 class="text-center">Informasi Profil Sekolah</h2>
+      <h2 class="text-center">INFORMASI PROFIL SEKOLAH</h2>
       <table>
         <tr>
           <th>Nama Sekolah</th>
@@ -9,7 +9,7 @@
         </tr>
         <tr>
           <th>Alamat</th>
-          <td>giggi</td>
+          <td>Jl Depok RT 02 RW 05 Sukamenak, Kecamatan Purbaratu, Kota Tasikmalaya</td>
         </tr>
         <tr>
           <th>Tahun Berdiri</th>
@@ -25,7 +25,7 @@
         </tr>
       </table>
 
-      <h2 class="text-center">Identitas Sekolah</h2>
+      <h2 class="text-center">IDENTITAS SEKOLAH</h2>
       <table>
         <tr>
           <th>Nama Kepala Sekolah</th>
@@ -45,11 +45,11 @@
         </tr>
         <tr>
           <th>Fasilitas</th>
-          <td>Laboratorium Komputer, Ruang Kelas Modern, Lapangan Olahraga, Ruang Perpustakaan</td>
+          <td>Laboratorium Komputer, Ruang Kelas Modern, Lapangan Olahraga, Ruang Perpustakaan, Masjid</td>
         </tr>
       </table>
 
-      <h2 class="text-center">Visi dan Misi Sekolah</h2>
+      <h2 class="text-center">VISI DAN MISI SEKOLAH</h2>
       <table>
         <tr>
           <th>Visi</th>
@@ -71,7 +71,7 @@
         </tr>
       </table>
 
-      <h2 class="text-center">Sejarah Sekolah</h2>
+      <h2 class="text-center">SEJARAH SEKOLAH</h2>
       <table>
         <tr>
           <td>

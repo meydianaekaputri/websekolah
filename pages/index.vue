@@ -1,22 +1,16 @@
 <template>
   <div>
-    <!-- Section for SMKN 4 Image -->
     <section class="image-section">
       <div class="image-container">
         <img
           src="assets/img/guru2.jpg"
           alt="SMKN 4"
-          class="large-photo"
-        />
-        <!-- Text inside the image -->
+          class="large-photo"/>
         <div class="image-text">SELAMAT DATANG DI SMK PUSAT KEUNGGULAN SMKN 4 TASIKMALAYA</div>
       </div>
     </section>
-
-    <!-- Section for Headmaster's Greeting with Photo -->
     <div class="greeting-section">
       <div class="greeting-container">
-        <!-- Headmaster's Photo -->
         <div class="photo-container">
           <img
             src="assets/img/kepalaskl.jpg"
@@ -24,8 +18,6 @@
             class="headmaster-photo"
           />
         </div>
-
-        <!-- Headmaster's Greeting Text -->
         <div class="greeting-card">
           <h2>Sambutan Kepala Sekolah</h2>
           <p>
@@ -37,37 +29,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Box Berita Section (News Box) -->
-    <section class="news-section">
-      <div class="news-container">
-        <h3>Berita Terbaru</h3>
-        <div class="news-card">
-          <div class="news-header">
-            <h4>Pengumuman Pendaftaran Siswa Baru</h4>
-            <span class="news-date">20 Desember 2024</span>
-          </div>
-          <div class="news-content">
-            <p>
-              Pendaftaran siswa baru untuk tahun ajaran 2024/2025 sudah dibuka. Untuk informasi lebih lanjut, silakan kunjungi halaman pendaftaran di website kami atau hubungi pihak sekolah. Jangan lewatkan kesempatan untuk bergabung dengan
-              SMKN 4 Tasikmalaya!
-            </p>
-            <NuxtLink
-              to="/berita"
-              class="read-more"
-              >Baca Selengkapnya</NuxtLink
-            >
-          </div>
-        </div>
-        <!-- You can add more news cards here -->
-      </div>
-    </section>
-
-    <main class="container">
-      <section>
-        <div class="table-container"></div>
-      </section>
-    </main>
   </div>
 </template>
 
@@ -75,14 +36,12 @@
 export default {
   data() {
     return {
-      // Any needed data can be added here
     };
   },
 };
 </script>
 
 <style scoped>
-/* Image Section */
 .image-section {
   text-align: center;
   margin-top: -100px;
@@ -114,7 +73,6 @@ export default {
   text-align: center;
 }
 
-/* Greeting Section */
 .greeting-section {
   display: flex;
   justify-content: center;
@@ -164,7 +122,6 @@ export default {
   text-align: justify;
 }
 
-/* News Box (Box Berita) Section */
 .news-section {
   margin-top: 50px;
   padding: 20px;
@@ -221,7 +178,6 @@ export default {
   text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .large-photo {
     width: 100%;

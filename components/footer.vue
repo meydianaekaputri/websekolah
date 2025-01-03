@@ -1,7 +1,8 @@
 <template>
   <footer class="footer">
     <div class="footer-container">
-      <p>&copy; Copyright SMKN4 TASIKMALAYA.All rights reserved.</p>
+      <p>&copy; Copyright SMKN 4 TASIKMALAYA</p>
+      <P>By Xiaomey</P>
     </div>
   </footer>
 </template>
@@ -14,8 +15,8 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #2c3e50; /* Warna latar belakang */
-  color: white; /* Warna teks */
+  background-color: #2f2546; 
+  color: white;
   padding: 20px;
   text-align: center;
   margin-top: 40px;

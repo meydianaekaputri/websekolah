@@ -1,46 +1,92 @@
 <template>
   <div class="gallery-container">
-    <h1>GALERI</h1>
+    <h1>EKSTRAKURIKULER</h1>
     <div class="gallery-grid">
       <div class="gallery-item">
         <img
-          src="~/assets/img/tbsm.jpg"
+          src="~/assets/img/mpk.jpeg"
           alt="Gambar 1"
           class="gallery-image"/>
-        <p>Sinergi Bagi Negeri, DAM Jalin Kerjasama dengan SMKN 4 Tasikmalaya Terapkan Kurikulum Teknik dan Bisnis Sepeda Motor Honda</p>
+        <p>MPK</p>
       </div>
 
       <div class="gallery-item">
         <img
-          src="~/assets/img/koneksi.jpg"
+          src="~/assets/img/pub.png"
           alt="Gambar 2"
           class="gallery-image"/>
-        <p>SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja</p>
+        <p>PUB</p>
       </div>
 
       <div class="gallery-item">
         <img
-          src="~/assets/img/koneksi.jpg"
+          src="~/assets/img/pks.png"
           alt="Gambar 3"
           class="gallery-image"/>
-        <p>DAM Jalin Kerjasama dengan SMKN 4 Tasikmalaya Terapkan Kurikulum Teknik & Bisnis Sepeda Motor Honda</p>
+        <p>PKS</p>
       </div>
 
       <div class="gallery-item">
         <img
-          src="~/assets/img/silat.jpg"
+          src="~/assets/img/pmr.png"
           alt="Gambar 3"
           class="gallery-image"/>
-        <p>320 Pesilat Perisai Diri Ikuti UKT Periode 72 di SMKN 4 Tasikmalaya, Penerimaan Anggota Baru Dibuka </p>
+        <p>PMR</p>
       </div>
 
       <div class="gallery-item">
         <img
-          src="~/assets/img/guru4.jpg"
+          src="~/assets/img/paskibra.png"
           alt="Gambar 3"
           class="gallery-image"/>
-        <p>Guru di SMKN 4 Tasikmalaya Melaksanakan UKBI Adaptif Merdeka</p>
+        <p>PASKIBRA</p>
       </div>
+
+      <div class="gallery-item">
+        <img
+          src="~/assets/img/futsal.png"
+          alt="Gambar 3"
+          class="gallery-image"/>
+        <p>FUTSAL</p>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="~/assets/img/basket.png"
+          alt="Gambar 3"
+          class="gallery-image"/>
+        <p>BASKET</p>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="~/assets/img/englishclub.png"
+          alt="Gambar 3"
+          class="gallery-image"/>
+        <p>ENGLISH CLUB</p>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="~/assets/img/bulutangkis.png"
+          alt="Gambar 3"
+          class="gallery-image"/>
+        <p>BULU TANGKKIS</p>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="~/assets/img/laskarpustaka.png"
+          alt="Gambar 3"
+          class="gallery-image"/>
+        <p>LASKAR PUSTAKA</p>
+      </div>
+
+     
+
+
+      
+
 
     </div>
   </div>

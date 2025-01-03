@@ -1,13 +1,11 @@
 <template>
   <div class="jurusan-container">
     <header class="page-header">
-      <h1 class="text-center">Daftar Jurusan SMKN 4 Tasikmalaya</h1>
+      <h1 class="text-center">DAFTAR JURUSAN </h1>
     </header>
 
     <main class="container">
       <section>
-        <h2 class="section-title">Daftar Jurusan</h2>
-        <p class="section-description">Berikut adalah daftar jurusan yang tersedia di SMKN 4 Tasikmalaya.</p>
         <div class="row mt-3 m-3 justify-content-center">
           <div class="col-md-3">
             <div class="card">
@@ -102,7 +100,7 @@
 }
 
 img {
-  width: 200px;
+  width: 250px;
   margin: auto;
 }
 </style>
@@ -116,31 +114,31 @@ export default {
           id: 1,
           name: 'Teknik Komputer dan Jaringan (TKJ)',
           description: 'Jurusan yang mempelajari tentang jaringan komputer dan infrastruktur IT.',
-          image: '/assets/img/tkj.jpeg', // Image path
+          image: '/assets/img/tkj.jpeg',
         },
         {
           id: 2,
           name: 'Pengembangan Perangkat Lunak dan Gim (PPLG)',
           description: 'Jurusan untuk pengembangan perangkat lunak dan game.',
-          image: '/assets/images/rpl.jpg', // Image path
+          image: '/assets/images/rpl.jpg',
         },
         {
           id: 3,
           name: 'Teknik Bisnis Sepeda Motor (TBSM)',
           description: 'Jurusan yang mempelajari tentang perawatan dan reparasi sepeda motor.',
-          image: '/assets/images/tbsm.jpg', // Image path
+          image: '/assets/images/tbsm.jpg',
         },
         {
           id: 4,
           name: 'Teknik Otomasi Industri (TOI)',
           description: 'Jurusan yang mengajarkan teknik otomasi dalam industri.',
-          image: '/assets/images/toi.jpg', // Image path
+          image: '/assets/images/toi.jpg',
         },
         {
           id: 5,
           name: 'Desain Komunikasi Visual (DKV)',
           description: 'Jurusan yang mempelajari desain grafis dan komunikasi visual.',
-          image: '/assets/images/dkv.jpg', // Image path
+          image: '/assets/images/dkv.jpg',
         },
       ],
     };
@@ -149,14 +147,13 @@ export default {
 </script> -->
 
 <!-- <style scoped>
-/* Styling for the container */
+
 .jurusan-container {
   margin: 0 auto;
   padding: 20px;
   max-width: 1200px;
 }
 
-/* Page Header Styling */
 .page-header {
   text-align: center;
   margin-bottom: 40px;
@@ -168,7 +165,6 @@ export default {
   font-weight: bold;
 }
 
-/* Section Title and Description */
 .section-title {
   font-size: 24px;
   text-align: center;
@@ -182,7 +178,6 @@ export default {
   margin-bottom: 30px;
 }
 
-/* Box layout for jurusan items */
 .jurusan-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +185,6 @@ export default {
   justify-content: center;
 }
 
-/* Styling for each jurusan box */
 .jurusan-box {
   width: 250px;
   background-color: #fff;
@@ -203,17 +197,15 @@ export default {
 }
 
 .jurusan-box:hover {
-  transform: scale(1.05); /* Slight scaling effect on hover */
+  transform: scale(1.05); 
 }
 
-/* Image styling */
 .jurusan-image {
   width: 100%;
   height: 180px;
-  object-fit: cover; /* Ensures the image covers the entire box without distortion */
+  object-fit: cover; 
 }
 
-/* Styling for the info inside the box */
 .jurusan-info {
   padding: 15px;
 }
@@ -230,14 +222,13 @@ export default {
   color: #777;
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .jurusan-box {
-    width: 100%; /* Make the boxes full width on smaller screens */
+    width: 100%; 
   }
 
   .jurusan-image {
-    height: 150px; /* Reduce image height for smaller screens */
+    height: 150px; 
   }
 }
 </style> -->
